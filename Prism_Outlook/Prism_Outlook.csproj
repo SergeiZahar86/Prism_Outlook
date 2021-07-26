@@ -35,7 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -52,12 +51,15 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
   </ItemGroup>
-
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DictionaryMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,38 +74,61 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-
+    <Resource Include="Fonts\Font Awesome 5 Brands-Regular-400.otf" />
+    <Resource Include="Fonts\Font Awesome 5 Free-Regular-400.otf" />
+    <Resource Include="Fonts\FontAwesome_Solid.otf" />
+    <Resource Include="Fonts\myIconsSet.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="FontAwesome5">
+      <Version>2.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WPF.Ribbon.Trial">
+      <Version>21.1.41</Version>
+    </PackageReference>
+    <PackageReference Include="ModernWpfUI">
+      <Version>0.9.4</Version>
+    </PackageReference>
+    <PackageReference Include="ModernWpfUI.MahApps">
+      <Version>0.9.4</Version>
+    </PackageReference>
+    <PackageReference Include="ModernWpfUis">
+      <Version>1.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Prism_Outlook.Modules.Contacts\Prism_Outlook.Modules.Contacts.csproj">
+      <Project>{3553EB66-C799-4709-8CF5-CFF7AEF58E69}</Project>
+      <Name>Prism_Outlook.Modules.Contacts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\Prism_Outlook.Modules.Mail\Prism_Outlook.Modules.Mail.csproj">
+      <Project>{E8A4414B-2EE7-49BC-93B7-BDDC93669F73}</Project>
+      <Name>Prism_Outlook.Modules.Mail</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
