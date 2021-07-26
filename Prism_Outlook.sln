@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Outlook", "Prism_Outlook\Prism_Outlook.csproj", "{495BC1A5-0DD5-4D23-B179-C26ECFBAF769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{495BC1A5-0DD5-4D23-B179-C26ECFBAF769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495BC1A5-0DD5-4D23-B179-C26ECFBAF769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495BC1A5-0DD5-4D23-B179-C26ECFBAF769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495BC1A5-0DD5-4D23-B179-C26ECFBAF769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B67BCEE-0AE3-4F56-B095-D7BA62AF9B8A}
+	EndGlobalSection
+EndGlobal
