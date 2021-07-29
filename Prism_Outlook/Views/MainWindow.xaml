@@ -22,8 +22,7 @@
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <DatePicker  />
-        <ui:SimpleTimePicker Grid.Row="1"/>
     </Grid>
 </Window>
