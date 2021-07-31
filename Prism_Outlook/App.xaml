@@ -24,7 +24,7 @@
                                 <ResourceDictionary.MergedDictionaries>
                                     <ui:ColorPaletteResources TargetTheme="Dark"
                                                               Accent="Red"
-                                                              AltHigh="DarkGray" />
+                                                              AltHigh="DarkSlateGray" />
                                 </ResourceDictionary.MergedDictionaries>
                             </ResourceDictionary>
                         </ui:ThemeResources.ThemeDictionaries>
