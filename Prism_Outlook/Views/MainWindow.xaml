@@ -14,6 +14,7 @@
         ui:ThemeManager.RequestedTheme="Dark"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        xmlns:core="clr-namespace:Prism_Outlook.Core;assembly=Prism_Outlook.Core"
         Title="{Binding Title}"
         Height="650"
         Width="825">
@@ -87,10 +88,38 @@
                             <MenuItem Header="View"
                                       Click="MenuItem_ClickAsync"></MenuItem>
                         </Menu>
-                        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
                         <TextBlock x:Name="DialogResult"
                                    Width="200"
                                    />
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="smartphonesTab3">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Height="10"
+                                 Width="10"
+                                 Fill="White" />
+                        <TextBlock Margin="3">RegionManager</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Menu VerticalAlignment="Top">
+                            <MenuItem Header="File">
+                                <MenuItem Header="New Project"></MenuItem>
+                                <MenuItem Header="Open Project">
+                                    <MenuItem Header="WinForms"></MenuItem>
+                                    <MenuItem Header="WPF"></MenuItem>
+                                </MenuItem>
+                                <Separator />
+                                <MenuItem Header="Exit"></MenuItem>
+                            </MenuItem>
+                            <MenuItem Header="Edit"></MenuItem>
+                            <MenuItem Header="View"
+                                      Click="MenuItem_ClickAsync"></MenuItem>
+                        </Menu>
+                        <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>

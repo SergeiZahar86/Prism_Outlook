@@ -1,5 +1,4 @@
-﻿using Infragistics.Windows.Ribbon;
-using ModernWpf.Controls;
+﻿using ModernWpf.Controls;
 using System;
 using System.Threading.Tasks;
 using System.Windows;

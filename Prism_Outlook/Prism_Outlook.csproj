@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\Regions\OutlookGroupRegionAdapter.cs" />
     <Compile Include="Models\ContentDialogResult.cs" />
     <Compile Include="Views\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
@@ -125,6 +126,10 @@
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Modules\Prism_Outlook.Modules.Calendar\Prism_Outlook.Modules.Calendar.csproj">
+      <Project>{f15d982a-3c20-4959-9a35-83067fd038f8}</Project>
+      <Name>Prism_Outlook.Modules.Calendar</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modules\Prism_Outlook.Modules.Contacts\Prism_Outlook.Modules.Contacts.csproj">
       <Project>{3553EB66-C799-4709-8CF5-CFF7AEF58E69}</Project>
       <Name>Prism_Outlook.Modules.Contacts</Name>
@@ -132,6 +137,10 @@
     <ProjectReference Include="..\Modules\Prism_Outlook.Modules.Mail\Prism_Outlook.Modules.Mail.csproj">
       <Project>{E8A4414B-2EE7-49BC-93B7-BDDC93669F73}</Project>
       <Name>Prism_Outlook.Modules.Mail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prism_Outlook.Core\Prism_Outlook.Core.csproj">
+      <Project>{e9e3562e-47dc-48b8-ae38-f908183e2127}</Project>
+      <Name>Prism_Outlook.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
